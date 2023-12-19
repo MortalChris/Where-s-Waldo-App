@@ -1,5 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+}
+body{
     background-image: url("../images/waldo1.jpg");
 }
