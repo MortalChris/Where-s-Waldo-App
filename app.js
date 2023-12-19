@@ -9,11 +9,14 @@ const ejs = require('ejs');
 app.engine('.html', require('ejs').__express);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
-
+//Public Routes (css)
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes
-const waldo1Router = require("./waldo1");
+const homepageRouter = require("./js/homepage");
+const waldo1Router = require("./js/waldo1");
 
+app.use("/", homepageRouter);
 app.use("/", waldo1Router);
 
 app.listen(port, () => {
