@@ -1,8 +1,32 @@
+:root{
+    --text-clr: #e0f7ec;
+    --background-clr: #040e09;
+    --primary-clr: #8de2b7;
+    --secondary-clr: #4e238b;
+    --accent-clr: #d350c9;
+}
 *{
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: var(--secondary-clr);
+}
 img {
+    height: 100%;
     width: 100%;
+}
+#waldoFound-container{
+    margin: 1rem;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    color: var(--text-clr);
+}
+#waldo-button-1{
+    border: 1px solid var(--accent-clr);
+    background-color: transparent;
+    position: absolute;
+    top: 45rem;
+    right: 62rem;
 }
