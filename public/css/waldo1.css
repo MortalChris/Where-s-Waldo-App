@@ -12,10 +12,18 @@
 body{
     background-color: var(--secondary-clr);
 }
-img {
+#img-container{
+    position: relative;
+    display: inline-block;
+}
+/* img {
     height: 100%;
     width: 100%;
-}
+    position: relative;
+    display: inline-block;
+} */
+
+/* First Waldo In Picture */
 #waldoFound-container{
     margin: 1rem;
     display: flex;
@@ -25,8 +33,22 @@ img {
 }
 #waldo-button-1{
     border: 1px solid var(--accent-clr);
-    background-color: transparent;
+    background-color: purple;
     position: absolute;
-    top: 45rem;
-    right: 62rem;
+    top: 58rem;
+    right: 71.5rem;
+}
+#waldo-button-2{
+    border: 1px solid var(--accent-clr);
+    background-color: purple;
+    position: absolute;
+    top: 47rem;
+    right: 70.5rem;
+}
+#waldo-button-3{
+    border: 1px solid var(--accent-clr);
+    background-color: purple;
+    position: absolute;
+    top: 74.5rem;
+    right: 51rem;
 }
