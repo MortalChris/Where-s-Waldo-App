@@ -9,30 +9,16 @@
 </head>
     <body name="body">
         <div id="waldoFound-container">
-            <p>Waldo's found: <%=waldo %>/5</p>
+            <p>Waldo's found: <%=waldo %>/3</p>
         </div>
         <div id="img-container">
             <img id="myImage" src="../images/waldo1.jpg" alt="Wheres waldo image">
-            <!-- <form action="/waldo1" method="POST">
+            <form action="/waldo1" method="POST">
                 <button id="waldo-button-1">Waldo</button>
-            </form> -->
+                <button id="waldo-button-2">Waldo</button>
+                <button id="waldo-button-3">Waldo</button>
+            </form>
         </div>
         <script src="waldo1.js"></script>
-        <script>
-            document.getElementById('myImage').addEventListener('click', function (e) {
-                const rect = this.getBoundingClientRect();
-                const x = e.clientX - rect.left; //x position within the element.
-                const y = e.clientY - rect.top;  //y position within the element.
-                console.log('X:', x, 'Y:', y);
-                // Send coordinates to server
-                fetch('/get-coordinates', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ x: x, y: y }),
-                })
-            });
-        </script>
     </body>
 </html>
